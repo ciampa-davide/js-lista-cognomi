@@ -12,3 +12,11 @@ document.getElementById("ul_total").innerHTML=listaCognomi;
 listaCognomi.sort();
 console.log(listaCognomi);
 document.getElementById("ol").innerHTML=listaCognomi;
+
+for (var i = 1; i <= listaCognomi.length; i++) {
+  if (listaCognomi[i] == cognome) {
+    var posizione= i;
+    console.log(i);
+    document.getElementById("number_order").innerHTML= i + 1;
+  }
+}
